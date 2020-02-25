@@ -1,0 +1,6 @@
+{:deps {org.clojure/clojure {:mvn/version "1.10.1"}
+        org.clojure/clojurescript {:mvn/version "1.10.597"}
+        com.bhauman/figwheel-main {:mvn/version "0.2.3"}
+        isomorphic-ml {:mvn/version "0.0.1-SNAPSHOT"}}
+ :paths ["src" "resources" "target"]
+ :aliases {:build {:main-opts ["-m" "figwheel.main" "-b" "dev" "-r"]}}}
