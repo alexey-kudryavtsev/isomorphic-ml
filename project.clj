@@ -10,5 +10,6 @@
 
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [org.clojure/clojurescript "1.10.597"]
-                 [clj-python/libpython-clj "1.36"]]
+                 [clj-python/libpython-clj "1.36"]
+                 [binaryage/oops "0.7.0"]]
 )

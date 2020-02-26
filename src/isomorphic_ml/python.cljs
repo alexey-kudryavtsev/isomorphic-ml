@@ -2,8 +2,6 @@
   (:require [pyodide]
             [clojure.core.async :as async :include-macros true]))
 
-(def ^:private python-ready? (async/chan))
-
 (defn eval
   "Evaluates one-line string and returns result."
   [s]
