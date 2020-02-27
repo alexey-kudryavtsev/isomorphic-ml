@@ -1,0 +1,2 @@
+^{:target-dir "emo_reply_client/target"}
+{:main emo-reply-client.core}

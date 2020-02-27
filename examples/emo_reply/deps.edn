@@ -1,0 +1,18 @@
+{:deps {org.clojure/clojure {:mvn/version "1.10.1"}
+        org.clojure/clojurescript {:mvn/version "1.10.520"}
+        isomorphic-ml {:mvn/version "0.0.1-SNAPSHOT"}}
+ :aliases {:run-client {:main-opts ["-m" "figwheel.main"
+                                    "-b" "emo_reply_client/dev" "-r"]
+                        :paths ["emo_reply_client/src"
+                                "emo_reply_client/target"
+                                "emo_reply_client/resources"]
+                        :extra-deps 
+                        {com.bhauman/figwheel-main {:mvn/version "0.2.3"}
+                         org.omcljs/om {:mvn/version "1.0.0-beta4"}
+                         binaryage/oops {:mvn/version "0.7.0"}}}
+           :run-server {:main-opts ["-m" "emo-reply-server.core"]
+                        :paths ["emo_reply_server/src"]
+                        :extra-deps 
+                        {ring {:mvn/version "1.8.0"}
+                         ring-cors {:mvn/version "0.1.13"}
+                         metosin/reitit {:mvn/version "0.4.2"}}}}}
